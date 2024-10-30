@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/feather.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="search-container">
+            <input type="text" id="city-input" placeholder="Enter city name">
+            <button id="search-btn">
+                <i data-feather="search"></i>
+            </button>
+        </div>
+        <div class="loading">Fetching weather data...</div>
+        <div class="weather-info">
+            <h2 class="city-name">New York</h2>
+            <div class="date">September 14, 2024</div>
+            <img id="weather-icon" src="/api/placeholder/100/100" alt="Weather Icon">
+            <div class="temperature">72°F</div>
+            <div class="description">Partly cloudy</div>
+            <div class="details">
+                <div class="detail">
+                    <i data-feather="droplet"></i>
+                    <span class="humidity-value">60%</span>
+                </div>
+                <div class="detail">
+                    <i data-feather="wind"></i>
+                    <span class="wind-value">5 mph</span>
+                </div>
+                <div class="detail">
+                    <i data-feather="bar-chart-2"></i>
+                    <span class="pressure-value">1013 hPa</span>
+                </div>
+            </div>
+        </div>
+        <div class="forecast">
+            <div class="forecast-item">
+                <div class="forecast-day">Mon</div>
+                <img src="/api/placeholder/50/50" alt="Forecast Icon">
+                <div class="forecast-temp">70°F</div>
+            </div>
+            <div class="forecast-item">
+                <div class="forecast-day">Tue</div>
+                <img src="/api/placeholder/50/50" alt="Forecast Icon">
+                <div class="forecast-temp">72°F</div>
+            </div>
+            <div class="forecast-item">
+                <div class="forecast-day">Wed</div>
+                <img src="/api/placeholder/50/50" alt="Forecast Icon">
+                <div class="forecast-temp">68°F</div>
+            </div>
+            <div class="forecast-item">
+                <div class="forecast-day">Thu</div>
+                <img src="/api/placeholder/50/50" alt="Forecast Icon">
+                <div class="forecast-temp">75°F</div>
+            </div>
+            <div class="forecast-item">
+                <div class="forecast-day">Fri</div>
+                <img src="/api/placeholder/50/50" alt="Forecast Icon">
+                <div class="forecast-temp">71°F</div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
